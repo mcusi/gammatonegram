@@ -50,5 +50,5 @@ def gtgplot(sxx, center_frequencies, sample_duration, sampling_rate,
    
 if __name__ == '__main__':
     sampling_rate, sound = wf.read('sample.wav')
-    sxx_hypothesized, center_frequencies = gtg_in_dB(sound, sampling_rate)
-    gtgplot(sxx_hypothesized, center_frequencies, len(sound), sampling_rate)
+    sxx, center_frequencies = gtg_in_dB(sound, sampling_rate)
+    gtgplot(sxx, center_frequencies, len(sound), sampling_rate)
