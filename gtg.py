@@ -96,6 +96,7 @@ def gammatonegram(x,sr=20000,twin=0.025,thop=0.010,N=64,
     #Entirely skipping Malcolm's function, because would require
     #altering ERBFilterBank code as well. 
     #i.e., in Ellis' code: usefft = 1
+    assert(x.dtype == 'int16')
 
     # How long a window to use relative to the integration window requested
     winext = 1;
